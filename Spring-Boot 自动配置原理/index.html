@@ -73,6 +73,8 @@
 
 
 
+  
+
 
   <link rel="alternate" href="/Marszxf0620.github.io/atom.xml" title="海底的🐟的个人博客" type="application/atom+xml">
 
@@ -81,17 +83,22 @@
 
 
 
-<meta name="description" content="Mars的个人站,主要是自己的学习java的经验和总结">
+<meta name="description" content="1、原理剖析： 引言：Spring Boot关于自动配置的源码在spring-boot-autoconfigure-x.x.x.x.jar 中  另外Spring-Boot的启动类上有一个@SpringBootApplication注解，这个注解是Spring Boot项目必不可少的注解。那么自动配置原理一定和这个注解有着千丝万缕的联系！ 123456@SpringBootApplication">
 <meta name="keywords" content="Java">
-<meta property="og:type" content="website">
-<meta property="og:title" content="海底的🐟的个人博客">
-<meta property="og:url" content="https://Marszxf0620.github.io/Marszxf0620.github.io/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建hexo博客+配置到github上遇到的问题">
+<meta property="og:url" content="https://Marszxf0620.github.io/Marszxf0620.github.io/Spring-Boot 自动配置原理/index.html">
 <meta property="og:site_name" content="海底的🐟的个人博客">
-<meta property="og:description" content="Mars的个人站,主要是自己的学习java的经验和总结">
+<meta property="og:description" content="1、原理剖析： 引言：Spring Boot关于自动配置的源码在spring-boot-autoconfigure-x.x.x.x.jar 中  另外Spring-Boot的启动类上有一个@SpringBootApplication注解，这个注解是Spring Boot项目必不可少的注解。那么自动配置原理一定和这个注解有着千丝万缕的联系！ 123456@SpringBootApplication">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020021214442219.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200212144639567.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200212144740196.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0OTMwOTUx,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2020-02-12T06:52:33.341Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="海底的🐟的个人博客">
-<meta name="twitter:description" content="Mars的个人站,主要是自己的学习java的经验和总结">
+<meta name="twitter:title" content="搭建hexo博客+配置到github上遇到的问题">
+<meta name="twitter:description" content="1、原理剖析： 引言：Spring Boot关于自动配置的源码在spring-boot-autoconfigure-x.x.x.x.jar 中  另外Spring-Boot的启动类上有一个@SpringBootApplication注解，这个注解是Spring Boot项目必不可少的注解。那么自动配置原理一定和这个注解有着千丝万缕的联系！ 123456@SpringBootApplication">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2020021214442219.png">
 
 
 
@@ -121,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="https://Marszxf0620.github.io/Marszxf0620.github.io/">
+  <link rel="canonical" href="https://Marszxf0620.github.io/Marszxf0620.github.io/Spring-Boot 自动配置原理/">
 
 
 
 
 
-  <title>海底的🐟的个人博客</title>
+  <title>搭建hexo博客+配置到github上遇到的问题 | 海底的🐟的个人博客</title>
   
 
 
@@ -146,8 +153,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -230,9 +236,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -262,9 +268,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/Marszxf0620.github.io/Spring-Boot 自动配置原理/" itemprop="url">搭建hexo博客+配置到github上遇到的问题</a></h1>
+          <h1 class="post-title" itemprop="name headline">搭建hexo博客+配置到github上遇到的问题</h1>
         
 
         <div class="post-meta">
@@ -314,9 +318,7 @@
       
 
       
-        
-          
-            <h3 id="1、原理剖析："><a href="#1、原理剖析：" class="headerlink" title="1、原理剖析："></a><strong>1、原理剖析：</strong></h3><ul>
+        <h3 id="1、原理剖析："><a href="#1、原理剖析：" class="headerlink" title="1、原理剖析："></a><strong>1、原理剖析：</strong></h3><ul>
 <li><strong>引言：</strong>Spring Boot关于自动配置的源码在<strong>spring-boot-autoconfigure-x.x.x.x.jar</strong> 中<br><img src="https://img-blog.csdnimg.cn/2020021214442219.png" alt="在这里插入图片描述"></li>
 </ul>
 <p>另外Spring-Boot的启动类上有一个<strong>@SpringBootApplication</strong>注解，这个注解是Spring Boot项目必不可少的注解。那么自动配置原理一定和这个注解有着千丝万缕的联系！</p>
@@ -366,8 +368,6 @@
 <p>3、我们再来看这个自动配置类配置了哪些组件，只有需要的有，就不用了再来配置</p>
 <p>4、给容器中自动配置类添加组件的时候，会从xxxProperties类中获取某些属性，我们就可以在配置文件中指定这      些属性的值</p>
 
-          
-        
       
     </div>
     
@@ -384,147 +384,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Marszxf0620.github.io/Marszxf0620.github.io/Marszxf0620.github.io/【jersey跨服务器上报错】com.sun.jersey.api.client.UniformInterfaceExceptionr：status of 403/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content>
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/Marszxf0620.github.io/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="海底的🐟的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/Marszxf0620.github.io/【jersey跨服务器上报错】com.sun.jersey.api.client.UniformInterfaceExceptionr：status of 403/" itemprop="url">【jersey跨服务器上报错】com.sun.jersey.api.client.UniformInterfaceExceptionr：status of 403.md</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-05T00:00:00+08:00">
-                2020-02-05
-              </time>
+              <a href="/Marszxf0620.github.io/【jersey跨服务器上报错】com.sun.jersey.api.client.UniformInterfaceExceptionr：status of 403/" rel="next" title="【jersey跨服务器上报错】com.sun.jersey.api.client.UniformInterfaceExceptionr：status of 403.md">
+                <i class="fa fa-chevron-left"></i> 【jersey跨服务器上报错】com.sun.jersey.api.client.UniformInterfaceExceptionr：status of 403.md
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>其实tomcat默认的情况下是过滤到静态资源的上传的，所以需要我们手动的设置一下！</p>
-<ol>
-<li><p>打开你的tomcat的安装的路径，点击conf,找到web.xml打开，然后找到DefaultServlet<br>找到这个位置：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;servlet&gt;</span><br><span class="line">    &lt;servlet-name&gt;<span class="keyword">default</span>&lt;<span class="regexp">/servlet-name&gt;</span></span><br><span class="line"><span class="regexp">    &lt;servlet-class&gt;org.apache.catalina.servlets.DefaultServlet&lt;/</span>servlet-<span class="class"><span class="keyword">class</span>&gt;</span></span><br><span class="line"><span class="class">    &lt;<span class="title">init</span>-<span class="title">param</span>&gt;</span></span><br><span class="line"><span class="class">        &lt;<span class="title">param</span>-<span class="title">name</span>&gt;<span class="title">debug</span>&lt;/<span class="title">param</span>-<span class="title">name</span>&gt;</span></span><br><span class="line"><span class="class">        &lt;<span class="title">param</span>-<span class="title">value</span>&gt;0&lt;/<span class="title">param</span>-<span class="title">value</span>&gt;</span></span><br><span class="line"><span class="class">    &lt;/<span class="title">init</span>-<span class="title">param</span>&gt;</span></span><br><span class="line"><span class="class">    &lt;<span class="title">init</span>-<span class="title">param</span>&gt;</span></span><br><span class="line"><span class="class">        &lt;<span class="title">param</span>-<span class="title">name</span>&gt;<span class="title">listings</span>&lt;/<span class="title">param</span>-<span class="title">name</span>&gt;</span></span><br><span class="line"><span class="class">        &lt;<span class="title">param</span>-<span class="title">value</span>&gt;<span class="title">false</span>&lt;/<span class="title">param</span>-<span class="title">value</span>&gt;</span></span><br><span class="line"><span class="class">    &lt;/<span class="title">init</span>-<span class="title">param</span>&gt;</span></span><br><span class="line"><span class="class">    &lt;<span class="title">load</span>-<span class="title">on</span>-<span class="title">startup</span>&gt;1&lt;/<span class="title">load</span>-<span class="title">on</span>-<span class="title">startup</span>&gt;</span></span><br><span class="line"><span class="class">&lt;/<span class="title">servlet</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>tomcat默认情况下是只读的，如果我们要往里边上传东西，是要将只读改为false的，加上下面的代码就可以了！</p>
-</li>
-</ol>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">init-param</span>&gt;</span><br><span class="line">        &lt;param-name&gt;readonly&lt;/param-name&gt;</span><br><span class="line">        &lt;param-value&gt;false&lt;/param-value&gt;</span><br><span class="line">     &lt;/init-param&gt;</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>最后的结果</li>
-</ol>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  &lt;<span class="selector-tag">servlet</span>&gt;</span><br><span class="line">      &lt;servlet-name&gt;default&lt;/servlet-name&gt;</span><br><span class="line">      &lt;servlet-class&gt;org.apache.catalina.servlets.DefaultServlet&lt;/servlet-class&gt;</span><br><span class="line">      &lt;<span class="selector-tag">init-param</span>&gt;</span><br><span class="line">          &lt;param-name&gt;debug&lt;/param-name&gt;</span><br><span class="line">          &lt;param-value&gt;0&lt;/param-value&gt;</span><br><span class="line">      &lt;/init-param&gt;</span><br><span class="line">      &lt;<span class="selector-tag">init-param</span>&gt;</span><br><span class="line">          &lt;param-name&gt;listings&lt;/param-name&gt;</span><br><span class="line">          &lt;param-value&gt;false&lt;/param-value&gt;</span><br><span class="line">      &lt;/init-param&gt;</span><br><span class="line"></span><br><span class="line">&lt;<span class="selector-tag">init-param</span>&gt;</span><br><span class="line">      &lt;param-name&gt;readonly&lt;/param-name&gt;</span><br><span class="line">      &lt;param-value&gt;false&lt;/param-value&gt;</span><br><span class="line">     &lt;/init-param&gt;</span><br><span class="line"></span><br><span class="line">      &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</span><br><span class="line">  &lt;/servlet&gt;</span><br></pre></td></tr></table></figure>
-
-<p>这样再重新部署服务器，就可以完成跨服务器的文件上传！</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -534,149 +415,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Marszxf0620.github.io/Marszxf0620.github.io/Marszxf0620.github.io/搭建hexo博客 + 配置到github上遇到的问题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content>
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/Marszxf0620.github.io/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="海底的🐟的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/Marszxf0620.github.io/搭建hexo博客 + 配置到github上遇到的问题/" itemprop="url">搭建hexo博客+配置到github上遇到的问题</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-05T16:56:48+08:00">
-                2019-07-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <hr>
-<p>主要问题</p>
-<ol>
-<li><p>hexo d 没有反应,报错等</p>
-</li>
-<li><p>配置到github后出现空白页</p>
-</li>
-</ol>
-<hr>
-<p>解决方案：<br> 问题 1 和问题 2 出现的原因主要是：<br> 在设置_config.yml文件的时候，每一个：后界面是要有一个空格的。   例如：  <strong>theme: next</strong></p>
-<hr>
-<p>回顾一下整个搭建过程</p>
-<ol>
-<li>安装git</li>
-<li>安装hexo</li>
-<li>新建一个Blog文件夹，在文件夹中右键 Git Bash here</li>
-<li>进入命令行，一系列配置，然后hexo s 本地配置 可以使用 http:localhost:4000 来进行本地访问。然后是 hexo clean ; hexo g ;hexo d 把博客配置到远端（github）</li>
-<li>最后购买域名，在github中设置域名以将xxx.github.io 与 <a href="http://www.xxx.com（自己购买的域名进行对接）。" target="_blank" rel="noopener">www.xxx.com（自己购买的域名进行对接）。</a></li>
-<li>然后可以用<a href="http://www.xxx.com进行访问，后续可以在文件Blog" target="_blank" rel="noopener">www.xxx.com进行访问，后续可以在文件Blog</a> 和theme 的_config.yml文件中对博客进行基本设置。</li>
-</ol>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -684,6 +427,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -704,8 +451,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -754,6 +510,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、原理剖析："><span class="nav-number">1.</span> <span class="nav-text">1、原理剖析：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -894,6 +666,10 @@
 
 
   
+  <script type="text/javascript" src="/Marszxf0620.github.io/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/Marszxf0620.github.io/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
